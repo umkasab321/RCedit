@@ -14,8 +14,8 @@ let g:loaded_RCedit = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-command! -nargs=0 RCed call s:editvimrc()
-function! s:editvimrc()
+command! -nargs=0 RCed call s:RCedit#editvimrc()
+function! s:RCedit#editvimrc()
 		tab new
 		edit $MYVIMRC
 endfunction
